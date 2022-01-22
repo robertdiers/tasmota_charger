@@ -8,6 +8,7 @@ services:
             tasmotacharger-net:
         volumes:
             - $HOME/.config:/home/coder/.config
+            - $HOME/.gitconfig:/home/coder/.gitconfig
             - $PWD:/home/coder/project
         environment:
             - DOCKER_USER=$USER
